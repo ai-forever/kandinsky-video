@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Text-to-video generation model that demonstrates high-quality dynamics, appearance, and text alignment.">
+  <meta name="keywords" content="Text-to-Video, Kandinsky Video">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kandinsky Video</title>
 
@@ -63,14 +63,14 @@
               <a href="https://ai-forever.github.io/kandinsky-video/">Andrey Kuznetsov</a><sup>1,3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://ai-forever.github.io/kandinsky-video/">Denis Dimitrov</a><sup>1,</sup>,
+              <a href="https://ai-forever.github.io/kandinsky-video/">Denis Dimitrov</a><sup>1,3</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Sber AI,</span>
-            <span class="author-block"><sup>2</sup>Moscow Institute of Physics and Technology</span>
-            <span class="author-block"><sup>3</sup>Artificial Intelligence Research Institute</span>
+            <span class="author-block"><sup>1</sup>Sber AI</span>
+            <span class="author-block"><sup>2</sup>MIPT</span>
+            <span class="author-block"><sup>3</sup>AIRI</span>
           </div>
 
           <div class="column has-text-centered">
@@ -143,9 +143,10 @@
         </div>  
       </div>
     </div> -->
-    <img src="./static/images/title.JPG"
-    class="interpolation-image"
-    alt="Interpolate start reference image."/>
+    <div class="column is-half-width">
+    	<img src="./static/images/title.JPG"
+    	class="interpolation-image"
+    	alt="Interpolate start reference image."/>
 
     <p class="subtitle has-text-centered">
       <b>Kandinsky Video</b> is a text-to-video generation model, which is based on the <b>FusionFrames</b> architecture, consisting of two main stages - keyframe generation and interpolation.
@@ -166,29 +167,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Multimedia generation approaches occupy a prominent
-place in artificial intelligence research. Text-to-image mod-
-els achieved high-quality results over the last few years.
-However, video synthesis methods recently started to de-
-velop. This paper presents a new two-stage latent diffusion
-text-to-video generation architecture based on the text-to-
-image diffusion model. The first stage concerns keyframes
-synthesis to figure the storyline of a video, while the second
-one is devoted to interpolation frames generation to make
-movements of the scene and objects smooth. We compare
-several temporal conditioning approaches for keyframes
-generation. The results show the advantage of using sep-
-arate temporal blocks over temporal layers in terms of met-
-rics reflecting video generation quality aspects and human
-preference. The design of our interpolation model sig-
-nificantly reduces computational costs compared to other
-masked frame interpolation approaches. Furthermore, we
-evaluate different configurations of MoVQ-based video de-
-coding scheme to improve consistency and achieve higher
-PSNR, SSIM, MSE, and LPIPS scores. Finally, we com-
-pare our pipeline with existing solutions and achieve top-
-2 scores overall and top-1 among open-source solutions:
-CLIPSIM = 0.2976 and FVD = 433.054. 
+            Multimedia generation approaches occupy a prominent place in artificial intelligence research. Text-to-image models achieved high-quality results over the last few years. However, video synthesis methods recently started to develop. This paper presents a new two-stage latent diffusion
+text-to-video generation architecture based on the text-to-image diffusion model. The first stage concerns keyframes synthesis to figure the storyline of a video, while the second one is devoted to interpolation frames generation to make movements of the scene and objects smooth. We compare
+several temporal conditioning approaches for keyframes generation. The results show the advantage of using separate temporal blocks over temporal layers in terms of metrics reflecting video generation quality aspects and human preference. The design of our interpolation model significantly reduces computational costs compared to other masked frame interpolation approaches. Furthermore, we evaluate different configurations of MoVQ-based video decoding scheme to improve consistency and achieve higher PSNR, SSIM, MSE, and LPIPS scores. Finally, we compare our pipeline with existing solutions and achieve top-2 scores overall and top-1 among open-source solutions: CLIPSIM = 0.2976 and FVD = 433.054. 
           </p>
         </div>
       </div>
@@ -233,7 +214,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
         </div>    
       </div>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
+        <div class="column is-half-width">
           <h2 class="title is-3">Video Frame Interpolation</h2>
           <div class="content has-text-justified">
             <img src="./static/images/interpolation_ours.jpg"
@@ -275,10 +256,10 @@ CLIPSIM = 0.2976 and FVD = 433.054.
                 <td><img src="./static/videos/Meerkat_conv_attn_layers_1d.gif"></td>
               </tr>
               <tr>
-                <td width="25%" style="text-align:center;">"Conv1dAttn1dBlocks"</td>
-                <td width="25%" style="text-align:center;">"Conv1dAttn3dBlocks</td>
-                <td width="25%" style="text-align:center;">"Conv3dAttn1dBlocks"</td>
-                <td width="25%" style="text-align:center;">"Conv1dAttn1dLayers"</td>
+                <td width="25%" style="text-align:center;">Conv1dAttn1dBlocks</td>
+                <td width="25%" style="text-align:center;">Conv1dAttn3dBlocks</td>
+                <td width="25%" style="text-align:center;">Conv3dAttn1dBlocks</td>
+                <td width="25%" style="text-align:center;">Conv1dAttn1dLayers</td>
               </tr>
             </tbody>
             </table>
@@ -316,7 +297,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
               <tr>
                 <td width="25%" style="text-align:center;">"Luminescent jellyfish swims underwater, neon, 4k"</td>
                 <td width="25%" style="text-align:center;">"Majestic waterfalls in a lush rainforest power, mist, and biodiversity</td>
-                <td width="25%" style="text-align:center;">"White ghost flies through a night clearing, 4k.gif""</td>
+                <td width="25%" style="text-align:center;">"White ghost flies through a night clearing, 4k"</td>
                 <td width="25%" style="text-align:center;">"Wildlife migration herds on the move, crossing landscapes in harmony"</td>
               </tr>
               <tr><td></td><td></td><td></td><td></td></tr>
@@ -327,7 +308,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
                 <td><img src="./static/videos/Polar ice caps_ the pristine wilderness of the Arctic and Antarctic.gif"></td>
               </tr>
               <tr>
-                <td width="25%" style="text-align:center;">"Majestic humpback whale breaching_ power, grace, and ocean spectacle"</td>
+                <td width="25%" style="text-align:center;">"Majestic humpback whale breaching power, grace, and ocean spectacle"</td>
                 <td width="25%" style="text-align:center;">"Evoke the sense of wonder in a time-lapse journey through changing seasons</td>
                 <td width="25%" style="text-align:center;">"Explore the fascinating world of underwater creatures in a visually stunning sequence"</td>
                 <td width="25%" style="text-align:center;">"Polar ice caps the pristine wilderness of the Arctic and Antarctic"</td>
@@ -340,8 +321,8 @@ CLIPSIM = 0.2976 and FVD = 433.054.
                 <td><img src="./static/videos/Craft a heartwarming narrative showcasing the bond between a human and their loyal pet companion.gif"></td>
               </tr>
               <tr>
-                <td width="25%" style="text-align:center;">"Rolling waves on a sandy beach_ relaxation, rhythm, and coastal beauty"</td>
-                <td width="25%" style="text-align:center;">"Sloth in slow motion_ deliberate movements, relaxation, and arboreal life</td>
+                <td width="25%" style="text-align:center;">"Rolling waves on a sandy beach relaxation, rhythm, and coastal beauty"</td>
+                <td width="25%" style="text-align:center;">"Sloth in slow motion deliberate movements, relaxation, and arboreal life</td>
                 <td width="25%" style="text-align:center;">"Sunrise over a tranquil mountain landscape colors, serenity, and awakening"</td>
                 <td width="25%" style="text-align:center;">"Craft a heartwarming narrative showcasing the bond between a human and their loyal pet companion"</td>
               </tr>
@@ -356,7 +337,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgment</h2>
 
-    The authors express great gratitude to Igor Pavlov, Anastasia Lysenko and Sergey Markov for their help in collecting and processing video data,
+    The authors express great gratitude to Igor Pavlov, Anastasia Lysenko and Sergey Markov for their contribution in collecting and processing video data,
      thanks to which this study became possible and Andrei Filatov for building the site.
 
 
