@@ -201,19 +201,19 @@ CLIPSIM = 0.2976 and FVD = 433.054.
 
 <section class="section">
   <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Overall Pipeline</h2>
-          <div class="content has-text-justified">
-            <img src="./static/images/pipeline.jpg"
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overall Pipeline</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/pipeline.jpg"
             class="interpolation-image"
             alt="Interpolate start reference image."/>
           <p>
             The encoded text prompt enters the U-Net keyframe generation model with temporal layers or blocks, and then the sampled latent keyframes are  sent to the latent interpolation model in such a way as to predict three interpolation frames between two keyframes. A temporal MoVQ-GAN decoder is used to get the final video result.
           </p>
-          </div>
-        </div>    
-      </div>
+        </div>
+      </div>    
+    </div>
     <!--/ Matting. -->
 
       <div class="columns is-centered has-text-centered">
@@ -251,7 +251,24 @@ CLIPSIM = 0.2976 and FVD = 433.054.
           </div>
         </div>    
       </div>
-    </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video Frame Interpolation</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/interpolation_ours.jpg"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+          <p>
+            A summary of the primary changes made to the T2I architecture includes: 
+            (i) The input convolution now accepts three noisy latent inputs (interpolated frames) and two conditioning latent inputs (keyframes). 
+            (ii) The output convolution predicts three denoised latents.
+             (iii) Temporal convolutions have been introduced after each spatial convolution.
+
+          </p>
+          </div>
+        </div>    
+      </div>
+    
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Results for temporal conditioning</h2>
@@ -316,6 +333,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
         </div>
       </div>    
     </div>
+  </div>
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
