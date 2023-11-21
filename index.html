@@ -144,11 +144,15 @@
         </div>  
       </div>
     </div> -->
-    <div class="column is-half-width">
+    <div class="column is-full-width">
     	<img src="./static/images/title.JPG" width="800"
     	class="interpolation-image"
     	alt="Interpolate start reference image."/>
-
+    <style>
+	.column is-full-width {
+    	text-align: center;
+    }
+    </style>
     <p class="subtitle has-text-centered">
       <b>Kandinsky Video</b> is a text-to-video generation model, which is based on the <b>FusionFrames</b> architecture, consisting of two main stages - keyframe generation and interpolation.
       Our approach for temporal conditioning allows us to generate videos with high-quality appearance, smoothness and dynamics.
@@ -215,7 +219,7 @@ several temporal conditioning approaches for keyframes generation. The results s
         </div>    
       </div>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-half-width">
+        <div class="column is-full-width">
           <h2 class="title is-3">Video Frame Interpolation</h2>
           <div class="content has-text-justified">
             <img src="./static/images/interpolation_ours.jpg"
