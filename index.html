@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KandinskyVideo</title>
+  <title>Kandinsky Video</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -47,7 +47,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">KandinskyVideo </h1>
+          <h1 class="title is-1 publication-title">Kandinsky Video </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Vladimir Arkhipkin</a><sup>1</sup>,</span>
@@ -146,9 +146,9 @@
     <img src="./static/images/title.JPG"
     class="interpolation-image"
     alt="Interpolate start reference image."/>
-    
+
     <h2 class="subtitle has-text-centered">
-      <span class="dnerf">FusionFrames is a text-to-video generation model consisting of two main stages - keyframe generation and interpolation. 
+      <span class="dnerf">Kandinsky Video is a text-to-video generation model consisting of two main stages - keyframe generation and interpolation. 
          <br> Our approach for temporal conditioning allows us to generate videos with high-quality appearance, smoothness and dynamics.
     </h2>
   </div>
@@ -275,12 +275,63 @@ CLIPSIM = 0.2976 and FVD = 433.054.
           <img src="./static/images/interpolation_ours.jpg"
           class="interpolation-image"
           alt="Interpolate start reference image."/>
-        <p>
-          A summary of the primary changes made to the T2I architecture includes: 
-          (i) The input convolution now accepts three noisy latent inputs (interpolated frames) and two conditioning latent inputs (keyframes). 
-          (ii) The output convolution predicts three denoised latents. 
-          (iii) Temporal convolutions have been introduced after each spatial convolution.
-        </p>
+          
+          <div class="hero-body">  
+            <h3 class="title">Text-to-Video</h3>
+            <table class="center">
+              <tbody><tr><td></td><td></td><td></td><td></td></tr>
+              <tr>
+                <td><img src="./static/videos/A car moving on the road from the sea to the mountains.gif" raw="true"></td>
+                <td><img src="./static/videos/A red car drifting, 4k video.gif"></td>
+                <td><img src="./static/videos/chemistry laboratory, chemical explosion, 4k.gif"></td>              
+                <td><img src="./static/videos/Erupting volcano_ raw power, molten lava, and the forces of the Earth.gif"></td>
+              </tr>
+              <tr>
+                <td width="25%" style="text-align:center;">"A cat is running on the grass"</td>
+                <td width="25%" style="text-align:center;">"A panda is playing guitar on times square</td>
+                <td width="25%" style="text-align:center;">"A man is running in the snow"</td>
+                <td width="25%" style="text-align:center;">"An astronaut is skiing down the hill"</td>
+              </tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr>
+                <td><img src="./static/videos/luminescent jellyfish swims underwater, neon, 4k.gif" raw="true"></td>
+                <td><img src="./static/videos/Majestic waterfalls in a lush rainforest_ power, mist, and biodiversity.gif"></td>
+                <td><img src="./static/videos/white ghost flies through a night clearing, 4k.gif"></td>              
+                <td><img src="./static/videos/Wildlife migration_ herds on the move, crossing landscapes in harmony.gif"></td>
+              </tr>
+              <tr>
+                <td width="25%" style="text-align:center;">"A panda surfing on a wakeboard"</td>
+                <td width="25%" style="text-align:center;">"A bear dancing on times square</td>
+                <td width="25%" style="text-align:center;">"A man is riding a bicycle in the sunshine"</td>
+                <td width="25%" style="text-align:center;">"A horse galloping on a street"</td>
+              </tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr>
+                <td><img src="./static/videos/Majestic humpback whale breaching_ power, grace, and ocean spectacle.gif" raw="true"></td>
+                <td><img src="./static/videos/Evoke the sense of wonder in a time-lapse journey through changing seasons.gif"></td>
+                <td><img src="./static/videos/Explore the fascinating world of underwater creatures in a visually stunning sequence.gif"></td>              
+                <td><img src="./static/videos/Polar ice caps_ the pristine wilderness of the Arctic and Antarctic.gif"></td>
+              </tr>
+              <tr>
+                <td width="25%" style="text-align:center;">"A tiger walking alone down the street"</td>
+                <td width="25%" style="text-align:center;">"A panda surfing on a wakeboard</td>
+                <td width="25%" style="text-align:center;">"A horse galloping on a street"</td>
+                <td width="25%" style="text-align:center;">"A cute cat running in a beatiful meadow"</td>
+              </tr>
+              <tr><td></td><td></td><td></td><td></td></tr>
+              <tr>
+                <td><img src="./static/videos/Rolling waves on a sandy beach_ relaxation, rhythm, and coastal beauty.gif" raw="true"></td>
+                <td><img src="./static/videos/Sloth in slow motion_ deliberate movements, relaxation, and arboreal life.gif"></td>
+                <td><img src="./static/videos/Sunrise over a tranquil mountain landscape_ colors, serenity, and awakening.gif"></td>              
+                <td><img src="./static/videos/Craft a heartwarming narrative showcasing the bond between a human and their loyal pet companion.gif"></td>
+              </tr>
+              <tr>
+                <td width="25%" style="text-align:center;">"A horse galloping on a street"</td>
+                <td width="25%" style="text-align:center;">"A panda walking alone down the street</td>
+                <td width="25%" style="text-align:center;">"A dog is walking down the street"</td>
+                <td width="25%" style="text-align:center;">"An astronaut is waving his hands on the moon"</td>
+              </tr>
+            </tbody></table>
         </div>
       </div>    
     </div>
@@ -290,11 +341,11 @@ CLIPSIM = 0.2976 and FVD = 433.054.
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{TBD,
+  author    = {TBD},
+  title     = {TBD},
+  journal   = {TBD},
+  year      = {2023},
 }</code></pre>
   </div>
 </section>
