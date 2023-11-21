@@ -116,7 +116,7 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <!-- <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/meduza.mp4"
@@ -142,9 +142,13 @@
           </video>
         </div>  
       </div>
-    </div>
+    </div> -->
+    <img src="./static/images/title.JPG"
+    class="interpolation-image"
+    alt="Interpolate start reference image."/>
+    
     <h2 class="subtitle has-text-centered">
-      <span class="dnerf">FusionFrames is a text-to-video generation model consisting of two main stages - keyframe generation and interpolation.
+      <span class="dnerf">FusionFrames is a text-to-video generation model consisting of two main stages - keyframe generation and interpolation. 
          <br> Our approach for temporal conditioning allows us to generate videos with high-quality appearance, smoothness and dynamics.
     </h2>
   </div>
@@ -224,8 +228,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
             All layers indicated in gray are not trained in T2V architectures and are initialized with the weights of the T2I model. 
             NA and N in the left corner of all layers correspond to the presence of prenormalization layers with and without activation, respectively. 
             For different types of blocks we implemented different types of temporal attention and temporal convolution layers, (left). 
-            We also implement different types of temporal conditioning. 
-            One of them is simple conditioning when pixel see only itself value in different moments of type (1D layers). 
+            We also implement different types of temporal conditioning. One of them is simple conditioning when pixel see only itself value in different moments of type (1D layers). 
             In 3D layers pixels can see the values of its neighbors also in different moments of time (right).
           </p>
           </div>
@@ -241,8 +244,9 @@ CLIPSIM = 0.2976 and FVD = 433.054.
           <p>
             A summary of the primary changes made to the T2I architecture includes: 
             (i) The input convolution now accepts three noisy latent inputs (interpolated frames) and two conditioning latent inputs (keyframes). 
-            (ii) The output convolution predicts three denoised latents. 
-            (iii) Temporal convolutions have been introduced after each spatial convolution.
+            (ii) The output convolution predicts three denoised latents.
+             (iii) Temporal convolutions have been introduced after each spatial convolution.
+
           </p>
           </div>
         </div>    
@@ -252,15 +256,14 @@ CLIPSIM = 0.2976 and FVD = 433.054.
       <div class="column is-four-fifths">
         <h2 class="title is-3">Results for temporal conditioning</h2>
         <div class="content has-text-justified">
-          <img src="./static/images/interpolation_ours.jpg"
-          class="interpolation-image"
-          alt="Interpolate start reference image."/>
         <p>
-          A summary of the primary changes made to the T2I architecture includes: 
-          (i) The input convolution now accepts three noisy latent inputs (interpolated frames) and two conditioning latent inputs (keyframes). 
-          (ii) The output convolution predicts three denoised latents. 
-          (iii) Temporal convolutions have been introduced after each spatial convolution.
+          We propose our approach for temporal conditioning based on separate temporal blocks. 
+          We compared three types of temporal blocks with temporal layers, which were commonly used in previous works, and gained the advantage of our approach in terms of frame quality, text alignment and temporal consistency.
         </p>
+        <img src="./static/images/panda_generations.jpg"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+        
         </div>
       </div>    
     </div>
