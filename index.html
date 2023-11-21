@@ -197,12 +197,10 @@ CLIPSIM = 0.2976 and FVD = 433.054.
 
   </div>
 </section>
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full-width">
         <h2 class="title is-3">Overall Pipeline</h2>
         <div class="content has-text-justified">
           <img src="./static/images/pipeline.jpg"
@@ -217,7 +215,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
     <!--/ Matting. -->
 
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-full-width">
           <h2 class="title is-3">Keyframes Generation with Temporal Conditioning </h2>
           <div class="content has-text-justified">
             <img src="./static/images/temporal_layers_blocks.jpg"
@@ -235,7 +233,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
         </div>    
       </div>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-full-width">
           <h2 class="title is-3">Video Frame Interpolation</h2>
           <div class="content has-text-justified">
             <img src="./static/images/interpolation_ours.jpg"
@@ -252,7 +250,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
         </div>    
       </div>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-full-width">
           <h2 class="title is-3">Video Frame Interpolation</h2>
           <div class="content has-text-justified">
             <img src="./static/images/interpolation_ours.jpg"
@@ -270,17 +268,19 @@ CLIPSIM = 0.2976 and FVD = 433.054.
       </div>
     
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full-width">
         <h2 class="title is-3">Results for temporal conditioning</h2>
         <div class="content has-text-justified">
+        
+        <img src="./static/images/panda_generations.jpg"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+          
         <p>
           We propose our approach for temporal conditioning based on separate temporal blocks. 
           We compared three types of temporal blocks with temporal layers, which were commonly used in previous works, and gained the advantage of our approach in terms of frame quality, text alignment and temporal consistency.
         </p>
-        <img src="./static/images/panda_generations.jpg"
-            class="interpolation-image"
-            alt="Interpolate start reference image."/>
-
+        
           <div class="container">
             <div class="row row-cols-md-4 g-4" id="video-container">
               
@@ -336,11 +336,10 @@ CLIPSIM = 0.2976 and FVD = 433.054.
   </div>
 
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full-width">
         <h2 class="title is-3">Other results</h2>
         <div class="content has-text-justified">
           <div class="hero-body">  
-            <h3 class="title">Text-to-Video</h3>
             <table class="center">
               <tbody><tr><td></td><td></td><td></td><td></td></tr>
               <tr>
@@ -353,7 +352,7 @@ CLIPSIM = 0.2976 and FVD = 433.054.
                 <td width="25%" style="text-align:center;">"A car moving on the road from the sea to the mountains"</td>
                 <td width="25%" style="text-align:center;">"A red car drifting, 4k video</td>
                 <td width="25%" style="text-align:center;">"Chemistry laboratory, chemical explosion, 4k"</td>
-                <td width="25%" style="text-align:center;">"Erupting volcano_ raw power, molten lava, and the forces of the Earth"</td>
+                <td width="25%" style="text-align:center;">"Erupting volcano raw power, molten lava, and the forces of the Earth"</td>
               </tr>
               <tr><td></td><td></td><td></td><td></td></tr>
               <tr>
@@ -364,9 +363,9 @@ CLIPSIM = 0.2976 and FVD = 433.054.
               </tr>
               <tr>
                 <td width="25%" style="text-align:center;">"Luminescent jellyfish swims underwater, neon, 4k"</td>
-                <td width="25%" style="text-align:center;">"Majestic waterfalls in a lush rainforest_ power, mist, and biodiversity</td>
+                <td width="25%" style="text-align:center;">"Majestic waterfalls in a lush rainforest power, mist, and biodiversity</td>
                 <td width="25%" style="text-align:center;">"White ghost flies through a night clearing, 4k.gif""</td>
-                <td width="25%" style="text-align:center;">"Wildlife migration_ herds on the move, crossing landscapes in harmony"</td>
+                <td width="25%" style="text-align:center;">"Wildlife migration herds on the move, crossing landscapes in harmony"</td>
               </tr>
               <tr><td></td><td></td><td></td><td></td></tr>
               <tr>
@@ -379,19 +378,19 @@ CLIPSIM = 0.2976 and FVD = 433.054.
                 <td width="25%" style="text-align:center;">"Majestic humpback whale breaching_ power, grace, and ocean spectacle"</td>
                 <td width="25%" style="text-align:center;">"Evoke the sense of wonder in a time-lapse journey through changing seasons</td>
                 <td width="25%" style="text-align:center;">"Explore the fascinating world of underwater creatures in a visually stunning sequence"</td>
-                <td width="25%" style="text-align:center;">"Polar ice caps_ the pristine wilderness of the Arctic and Antarctic"</td>
+                <td width="25%" style="text-align:center;">"Polar ice caps the pristine wilderness of the Arctic and Antarctic"</td>
               </tr>
               <tr><td></td><td></td><td></td><td></td></tr>
               <tr>
                 <td><img src="./static/videos/Rolling waves on a sandy beach_ relaxation, rhythm, and coastal beauty.gif" raw="true"></td>
                 <td><img src="./static/videos/Sloth in slow motion_ deliberate movements, relaxation, and arboreal life.gif"></td>
-                <td><img src="./static/videos/Sunrise over a tranquil mountain landscape colors, serenity, and awakening.gif"></td>              
+                <td><img src="./static/videos/Sunrise over a tranquil mountain landscape_ colors, serenity, and awakening.gif"></td>              
                 <td><img src="./static/videos/Craft a heartwarming narrative showcasing the bond between a human and their loyal pet companion.gif"></td>
               </tr>
               <tr>
                 <td width="25%" style="text-align:center;">"Rolling waves on a sandy beach_ relaxation, rhythm, and coastal beauty"</td>
                 <td width="25%" style="text-align:center;">"Sloth in slow motion_ deliberate movements, relaxation, and arboreal life</td>
-                <td width="25%" style="text-align:center;">"Sunrise over a tranquil mountain landscape_ colors, serenity, and awakening"</td>
+                <td width="25%" style="text-align:center;">"Sunrise over a tranquil mountain landscape colors, serenity, and awakening"</td>
                 <td width="25%" style="text-align:center;">"Craft a heartwarming narrative showcasing the bond between a human and their loyal pet companion"</td>
               </tr>
             </tbody></table>
@@ -400,6 +399,8 @@ CLIPSIM = 0.2976 and FVD = 433.054.
     </div>
 
 </section>
+
+<hr>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
