@@ -54,7 +54,7 @@
             <span class="author-block">
               <a href="https://ai-forever.github.io/kandinsky-video/">Zein Shaheen</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="hhttps://ai-forever.github.io/kandinsky-video/">Viacheslav Vasilev</a><sup>1,2</sup>,
+              <a href="https://ai-forever.github.io/kandinsky-video/">Viacheslav Vasilev</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
               <a href="https://ai-forever.github.io/kandinsky-video/">Elizaveta Dakhova</a><sup>1</sup>,
@@ -148,8 +148,8 @@
     alt="Interpolate start reference image."/>
 
     <p class="subtitle has-text-centered">
-      Kandinsky Video is a text-to-video generation model consisting of two main stages - keyframe generation and interpolation. 
-      <br> Our approach for temporal conditioning allows us to generate videos with high-quality appearance, smoothness and dynamics.
+      <b>Kandinsky Video</b> is a text-to-video generation model, which is based on the <b>FusionFrames</b> architecture, consisting of two main stages - keyframe generation and interpolation. <br>
+      Our approach for temporal conditioning allows us to generate videos with high-quality appearance, smoothness and dynamics.
     </p>
   </div>
 </section>
@@ -222,12 +222,12 @@ CLIPSIM = 0.2976 and FVD = 433.054.
             class="interpolation-image"
             alt="Interpolate start reference image."/>
           <p>
-            We examined two approaches of temporal components use in pretrained architecture of T2I U-Net – the traditional approach of mixing spatial and temporal layers in one block (left) and our approach of allocating a separate temporal block (middle). 
+            We examined two approaches of temporal components use in pretrained architecture of T2I U-Net – the traditional approach of mixing spatial and temporal layers in one block (<b>left</b>) and our approach of allocating a separate temporal block (<b>middle</b>). 
             All layers indicated in gray are not trained in T2V architectures and are initialized with the weights of the T2I model. 
             NA and N in the left corner of all layers correspond to the presence of prenormalization layers with and without activation, respectively. 
-            For different types of blocks we implemented different types of temporal attention and temporal convolution layers, (left). 
+            For different types of blocks we implemented different types of temporal attention and temporal convolution layers, (<b>left</b>). 
             We also implement different types of temporal conditioning. One of them is simple conditioning when pixel see only itself value in different moments of type (1D layers). 
-            In 3D layers pixels can see the values of its neighbors also in different moments of time (right).
+            In 3D layers pixels can see the values of its neighbors also in different moments of time (<b>right</b>).
           </p>
           </div>
         </div>    
